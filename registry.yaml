@@ -1,0 +1,19 @@
+Bioimagesuite/Viewer:
+  - item: file
+    regex: \.nii(\.gz)?$
+    maxsize: 1e9
+    endpoint: https://bioimagesuiteweb.github.io/webapp/viewer.html?image={url}
+  - item: directory
+    endpoint: https://bioimagesuiteweb.github.io/webapp/viewer.html?repo={url}
+Bioimagesuite/DualViewer:
+  - item: file
+    regex: \.nii(\.gz)?$
+    maxsize: 1e9
+    endpoint: https://bioimagesuiteweb.github.io/webapp/dualviewer.html?image={url}
+  - item: directory
+    endpoint: https://bioimagesuiteweb.github.io/webapp/dulviewer.html?repo={url}
+MetaCell/NWBExplorer:
+  item: file
+  regex: \.nwb$
+  maxsize: 1e9
+  endpoint: http://nwbexplorer.opensourcebrain.org/nwbfile={url}
